@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select -> Textarea</title>
+</head>
+
+<body>
+    <form action="">
+        <div class="group-form">
+            <label for="label">Label</label>
+            <select onchange="document.getElementById('observation').value = this.options[this.selectedIndex].getAttribute('dataobservation');" name="myname" class="myclass"> 
+                <option dataobservation="Observation1" value="Option1">Option1</option>
+                <option dataobservation="Observation2" value="Option2">Option2</option>
+                <option dataobservation="Observation3" value="Option3">Option3</option>
+                <option dataobservation="Observation4" value="Option4">Option4</option>
+            </select>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+        </div>
+        <div class="group-form">
+            <label for="">Observation</label>
+            <textarea name="" id="observation" cols="30" rows="10"></textarea>
+        </div>
+    </form>
+</body>
+
+</html>
